@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.grpc.poc";
+option java_outer_classname = "PocGrpc";
+option objc_class_prefix = "HLW";
+
+package com.grpc.poc;
+
+service PocGrpcService {
+  rpc send (PocGrpcRequest) returns (PocGrpcReply) {}
+}
+
+message PocGrpcRequest {
+  string name = 1;
+}
+
+message PocGrpcReply {
+  string message = 1;
+}

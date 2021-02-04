@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: pocGrpc
+grpc:
+  server:
+    port: 8080
